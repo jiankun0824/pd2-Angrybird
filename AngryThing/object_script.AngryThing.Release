@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\gameitem.o
+./release\bird.o
+./release\land.o
+./release\brick.o
+./release\pig.o
+./release\redbird.o
+./release\yellowbird.o
+./release\whitebird.o
+./release\bluebird.o
+./release\qrc_res.o
+./release\moc_mainwindow.o
+./release\moc_gameitem.o
+);
