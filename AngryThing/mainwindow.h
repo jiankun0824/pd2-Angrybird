@@ -41,12 +41,7 @@ public:
     void showEvent(QShowEvent *);
     bool eventFilter(QObject *,QEvent *event);
     void closeEvent(QCloseEvent *);
-    void NewObject();
-    int score=0;
-    QLabel *lblScore;
-    QPushButton *btnExit, *btnRestart;
-
-
+    void NewObject();    
 
 signals:
     void quitGame();
@@ -65,6 +60,8 @@ private:
     b2World *world2;
     QList<GameItem *> itemList;
     QTimer timer;
+    QLabel *lblScore;
+    QPushButton *btnExit, *btnRestart;
 
     Bird *BBird[4];
     Bird *BBird_fly[4];
@@ -72,19 +69,12 @@ private:
     Land *block1,*block2;
     brick * BBrick[10];
 
-    int b_count=0;
     bool fireconfrim=false,leftclick=false;
-
-
-
-
     float x_start,y_start,x_end,y_end,x_lenght,y_lenght,x_oriposition,y_oriposition ,x_diff,y_diff,vx,vy;
     float bird_start_x,bird_start_y;
     int leftbutton,rightbutton,count[3]={0,0,0};
-        int haha=0;
-
-
-
+    int b_count=0;
+    int score=0;
 };
 
 #endif // MAINWINDOW_H

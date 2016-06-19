@@ -277,6 +277,9 @@ void MainWindow::RestartGame()
 {
     score=0;
     b_count=0;
+    count[0]=0;
+    count[1]=0;
+    count[2]=0;
 
     NewObject();
     printf("exi2323t\n");
